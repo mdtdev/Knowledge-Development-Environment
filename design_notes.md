@@ -40,3 +40,10 @@ In looking at the way that people discuss note taking online I have noticed that
 > **Terminology Note:** We specifically avoid the use of the word "system" as a name for any of these concepts because that word is used in other places to mean any and/or all of the things we distinguished. Additionally, it can generically refer to all of the above when they are taken together as a complete solution. So we avoid the term when we can.
 
 In the usual usage of these terms there is some overlap that is unavoidable, and that problem will hold here as well, but trying to make these distinctions is an important step in conceptualizing what a knowledge development environment needs to consider. It focuses on how different aspects of the system can be made to be flexible and implement different strategies.
+
+## Requirements and Goals for a Knowledge Development Environment
+
+### Definition of a Knowledge Development Environment (NDE)
+
+In the context of the previous section, we can define a Knowledge Development Environment as an extensible **tool**, or collection of **tools**, that allows users to combine various **standards** with the environment's functions/actions to build **implementations** of various note taking **strategies**, either alone or in combinations, to allow users to develop various **workflows** for successful knowledge work.
+
