@@ -45,19 +45,41 @@ In the usual usage of these terms there is some overlap that is unavoidable, and
 
 ### Definition of a Knowledge Development Environment (NDE)
 
-In the context of the previous section, we can define a Knowledge Development Environment as an extensible **tool**, or collection of **tools**, that allows users to combine various **standards** with the environment's functions/actions to build **implementations** of various note taking **strategies**, either alone or in combinations, to allow users to develop various **workflows** for successful knowledge work.
+In the context of the previous section, we can define a Knowledge Development Environment as an extensible **tool**, or collection of **tools**, that allows users to combine various **standards** with the environment's functions/actions to build **implementations** of various note taking **strategies**, either alone or in combinations, to allow users to develop personal **workflows** for successful knowledge work.
 
 ### NDE as a Tool
 
 Thought of as a tool, a NDE must meet the following requirements for it to be acceptable:
 
-+ It must be **open source** and **free** in the various senses of those terms used in software development. We believe that building tools to support thinking and reasoning and then putting them behind paywalls, or otherwise limiting their use, is unethical. The only way to guarantee free usage for everyone is to use open source model.
++ It must be **open source** and **free** in the various senses of those terms used in software development. We believe that building tools to support thinking and reasoning and then putting them behind paywalls, or otherwise limiting their use, is unethical. The only way to guarantee free usage for everyone is to use the open source model.
 + It must support user **privacy** by allowing the user to keep their data local or to use any combination of tools to keep their data private (eg. [WebDAV](https://en.wikipedia.org/wiki/WebDAV), etc.).
 + It must be **extensible** and allow the user to implement different strategies through different standards. More importantly, it should be an **open system** that plays well with other systems (**interoperable**) to allow more complex workflows to be implemented.
 	+ Ideally, standards should be implementable using settings files of some sort.
-+ It must treat Linux as a first-class operating system and/or be platform neutral.
+	+ "Plays well" includes both interoperability and import/export functions that allow users to move into NDE and out of it.
++ It must treat **Linux as a first-class operating system** and/or be platform neutral.
 + While not a strict requirement, allowing for a **plug-in archetecture** allows multiple implementations and workflows and it should ideally support multiple user-interfaces.
 + It should support **writing as the primary activity** of knowledge work.
-+ It should support the **creation of visual and auditory media** at least as plug-ins if not natively. This can be part of the open system specification allowing for the calling of other, unrelated, programs to create such media, allowing people to use their favorite tools in this area as integrated parts of the system.
++ It should support the **creation of audio-visual media** at least via plug-ins, or interoperability with other software, if not natively.
+	+ The expectation is that simple graphical things may be plug-in or built-in, but substantial media work is expected to be external. 
+	+ This can be part of the open system specification allowing for the calling of other, unrelated, programs to create such media, allowing people to use their favorite tools in this area as integrated parts of the system.
+	+ Note that extensive support for external programs encourages the construction of system monitoring functions such as directory watching.
 + It should support **local hosting of various kinds of media** and have close integration with media creating tools of various types as part of the larger open system architecture. 
 + It should **render media from the web** similarly to how it renders and processes local media.
+
+### Scale
+
+Several of the tools available now use Markdown files in a directory as the primary data structure; it is currently open to question if this is going to scale when the number of note files hit 10,000 or 100,000 orders of magnitude.
+
+## Bootstrap Approach
+
+Following the methods of the developers of [Foam](https://foambubble.github.io/foam/) we intend to use as many other programs and platforms as possible to alleviate the demand to create new tools _sui generis_. 
+
+Central to the development is a Markdown editor and there are plenty to choose from; programmer's editors are a good choice as most of them allow plug-ins to be developed that operate within the window of the editor. Foam uses [Visual Studio Code](https://code.visualstudio.com/) as its host program, and that one is reasonable as it allows running processes from within the IDE.
+
+It is reasonable to assume that much of the development will depend on a client server model _a la_ [JupyterLab](https://jupyter.org/) or something along the lines of [Electron](https://www.electronjs.org/).
+
+We are also interested in making command-line tools as these have the ability to serve as both source libraries for other GUI applications to call as well as form a collection of scriptable tools to use for maintenance of the strategies developed.
+
+### "Plan A"
+
+We are expecting to start by using a tool like [Obsidian](https://obsidian.md/) as a primary program to allow us to start working now. We will start with implementations of Zettelkasten functions as command-line scripts (in Python) just to confirm that we have the right ideas about how to implement the needed functions in case the commercial and closed source projects go dark.
