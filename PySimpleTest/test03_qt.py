@@ -2,7 +2,7 @@
 # MDT
 # 2021.07.10
 
-import PySimpleGUI as sg
+import PySimpleGUIQt as sg
 
 sg.theme('SystemDefaultForReal')   # Add a touch of color
 
