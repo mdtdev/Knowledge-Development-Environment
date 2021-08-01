@@ -1,12 +1,12 @@
 # Design Notes
 
-2021.07.04 (Initial Working Draft)<br>Matthew Turner
+2021.08.01 (Initial Working Draft)<br>Matthew Turner
 
 ## Introduction
 
 This is a set of notes about a general Knowledge Development Environment, or NDE. Much of the focus here will be on note taking as an activity, but this should not be seen as an upper limit but instead it is a "minimal viable product" if you are into that way of thinking.
 
->**Naming Note:** Obviously, KDE was already taken. First it was a desktop thingy, then it became a well-known organization. So we went with **NDE**, "en-dee-ee," because that is sort of a joke: it is k**N**owledge **D**evelopment **E**nvironment and it sounds a little like **N**on-**D**isclosure **A**greement (NDA, because we keep your data safely on your own machine) and also **N**ear **D**eath **E**xperience. It is also reminiscent of **NLS**, or o**NL**ine **S**ystem, which is a [reference](https://en.wikipedia.org/wiki/NLS_(computer_system)) people in this area of knowledge work and intellectual augmentation should know. 😃
+>**Naming Note:** Obviously, KDE was already taken. First it was a desktop thingy, then it became a well-known organization. So we went with **NDE**, "en-dee-ee," because that is sort of a joke: it is k**N**owledge **D**evelopment **E**nvironment and it sounds a little like **N**on-**D**isclosure **A**greement (NDA, because we keep your data safely on your own machine) and also **N**ear **D**eath **E**xperience (make of that what you will). It is also reminiscent of **NLS**, or o**NL**ine **S**ystem, which is a [reference](https://en.wikipedia.org/wiki/NLS_(computer_system)) people in this area of knowledge work and intellectual augmentation should know. 😃
 
 A NDE should support all aspects of knowledge work (or at least as many as possible) and, being realistic, this means supporting writing as _the_ primary activity. More details about what such an environment should support are listed below.
 
@@ -84,4 +84,4 @@ We are also interested in making command-line tools as these have the ability to
 
 ### "Plan A"
 
-We are expecting to start by using a tool like [Obsidian](https://obsidian.md/) as a primary program to allow us to start working now. We will start with implementations of zettelkasten functions as command-line scripts (in Python) just to confirm that we have the right ideas about how to implement the needed functions in case the commercial and closed source projects go dark.
+We are expecting to start by using a tool like [Obsidian](https://obsidian.md/) as a primary program to allow us to start working now. We will start with implementations of zettelkasten functions as command-line scripts (in Python) just to confirm that we have the right ideas about how to implement the needed functions in case the commercial and closed source projects (like Obsidian) go dark.
