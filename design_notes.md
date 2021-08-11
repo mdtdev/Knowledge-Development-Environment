@@ -34,6 +34,11 @@ In looking at the way that people discuss note taking online I have noticed that
 >**Tools and Artifacts:** See [HERE](https://plato.stanford.edu/entries/artifact/#ThinActiArti) for some philosophy of thinking with artifacts and that idea that artifacts do some of our thinking for us.
 
 3. **Standard**: A standard is an agreement about how notation is to be used in the text of the files. It is a set of syntactic rules for the documents of the system, and it formalizes how some of the _semantics_ of the system are made machine recognizable. This has to do with everything from simple formatting of text, like using [Markdown](https://www.markdownguide.org/) or [Org Mode](https://orgmode.org/), to accessing APIs for web services, developing plug-ins for tools, or using developer libraries for toolmaking.
+
+A key feature of a **standard** is that it be well-defined. This allows the development of software tools to check the validity of a document written to the standard. It also allows software to modify, process, change, etc., documents in the standard; eating standardized documents and emitting transformed standardized documents back.
+
+We also note that where there is one standard there can be two standards just as easily, as long as the design makes appropriate allowances for defining standards **outside of the code used to process it**. That is, standards should be defined by meta-data (XML, JSON) and the code that processes the standard should use such external definitions. This allows three things: changes to the standard to be made without requiring code updates, the implementation of multiple standards that can be used in parallel, and the modification of a given standard to be made by users to make the standards work better for them. (We also note that personal modifications of the standard, made in meta-data, would be intrinsically shareable without the need to modify the core system.)
+
 4. **Implementation**: An implementation is a specific combination of strategy, standard(s), and tool(s). The goal of an implementation is to make the use of a particular strategy easy for people to do.
 5. **Workflow**: The term workflow will be used to capture all of the other details of how note taking is implemented for a given user; each user has their own specific, and likely unique, workflow. A workflow includes an (operating system) specific implementation, or several of these for multi-platform users, along with other artifactual and procedural choices needed by the user to do their work. This may include alternate tools used in parallel with the tools included in the implementation, methods and tools for initial capture of information, etc. This usage of the term workflow is a little bit non-standard, but we needed something to name these aspects of the problem.
 
@@ -41,11 +46,11 @@ In looking at the way that people discuss note taking online I have noticed that
 
 In the usual usage of these terms there is some overlap that is unavoidable, and that problem will hold here as well, but trying to make these distinctions is an important step in conceptualizing what a knowledge development environment needs to consider. It focuses on how different aspects of the system can be made to be flexible and implement different strategies.
 
-## Requirements and Goals for a Knowledge Development Environment
+## Requirements and Goals for a kNowledge Development Environment
 
-### Definition of a Knowledge Development Environment (NDE)
+### Definition of a kNowledge Development Environment (NDE)
 
-In the context of the previous section, we can define a Knowledge Development Environment as an extensible **tool**, or collection of **tools**, that allows users to combine various **standards** with the environment's functions/actions to build **implementations** of various note taking **strategies**, either alone or in combinations, to allow users to develop personal **workflows** for successful knowledge work.
+In the context of the previous section, we can define a knowledge development environment as an extensible **tool**, or collection of **tools**, that allows users to combine various **standards** with the environment's functions/actions to build **implementations** of various note taking **strategies**, either alone or in combinations, to allow users to develop personal **workflows** for successful knowledge work.
 
 ### NDE as a Tool
 
