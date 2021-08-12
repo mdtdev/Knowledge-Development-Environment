@@ -1,7 +1,5 @@
 # Design Notes
 
-2021.08.01 (Initial Working Draft)<br>Matthew Turner
-
 ## Introduction
 
 This is a set of notes about a general Knowledge Development Environment, or NDE. Much of the focus here will be on note taking as an activity, but this should not be seen as an upper limit but instead it is a "minimal viable product" if you are into that way of thinking.
@@ -87,6 +85,9 @@ It is reasonable to assume that much of the development will depend on a client 
 
 We are also interested in making command-line tools as these have the ability to serve as both function libraries for other GUI applications to call as well as form a collection of scriptable tools to use for maintenance of the strategies developed.
 
-### "Plan A"
+### "Route 1"
 
 We are expecting to start by using a tool like [Obsidian](https://obsidian.md/) as a primary program to allow us to start working now. We will start with implementations of zettelkasten functions as command-line scripts (in Python) just to confirm that we have the right ideas about how to implement the needed functions in case the commercial and closed source projects (like Obsidian) go dark.
+
+---
+2021.08.01 (Initial Working Draft)<br>Matthew Turner
