@@ -10,8 +10,11 @@ Notes and note taking strategies can be classified and categorized into many dif
 
 ## Some General Classifications
 
-First Term
-: Deinition of first term
+### Temporal Features and Completeness
+
+One important distinction has to do with the time usage of notes. We all make notes that we expect to make sense 10 minutes after we write them but which we expect would be worthless in a day or a week.
+
+
 
 ###
 
