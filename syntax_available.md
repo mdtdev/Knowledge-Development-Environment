@@ -48,7 +48,14 @@ ttt
 ## Syntax
 
 + Markdown
-  + At it's root, this is a Markdown based system, and Markdown is mostly plain text.
+  + At it's root, this is a Markdown based system, and Markdown is mostly **plain text**.
   + This is done for various reasons:
-    + Future-proofing: Text (Markdown) files are always human readable.
+    + **Future-proofing**: Text (Markdown) files are always human readable.
+    + **Simplicity**: People can learn enough of Markdown to use it productively in much less than an hour.
+    + **Visual Appeal**: Most people can read "uncompiled" Markdown without requiring CSS or other formatting. Additionally tools exist for some live translation of Markdown in an editor context (_a la_ VSC's live Markdown "semi-preview.")
+    + **Easy translation**: Via `pandoc` and other tools, Markdown is easy to use to create other document formats like LaTeX and Microsoft Word, etc.
+    +
++ Links
+  + Wiki-style links are the default in most of these systems
+    + We enforce these
     +
