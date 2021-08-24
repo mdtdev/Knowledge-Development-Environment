@@ -31,7 +31,7 @@ In looking at the way that people discuss note taking online I have noticed that
 
 >**Tools and Artifacts:** See [HERE](https://plato.stanford.edu/entries/artifact/#ThinActiArti) for some philosophy of thinking with artifacts and that idea that artifacts do some of our thinking for us.
 
-3. **Standard**: A standard is an agreement about how notation is to be used in the text of the files. It is a set of syntactic rules for the documents of the system, and it formalizes how some of the _semantics_ of the system are made machine recognizable. This has to do with everything from simple formatting of text, like using [Markdown](https://www.markdownguide.org/) or [Org Mode](https://orgmode.org/), to accessing APIs for web services, developing plug-ins for tools, or using developer libraries for toolmaking.
+3. **Standard**: A standard is an agreement about how notation (or syntax) is to be used in the text of the files. It is a set of syntactic rules for the documents of the system, and it formalizes how some of the _semantics_ of the system are made machine recognizable. This has to do with everything from simple formatting of text, like using [Markdown](https://www.markdownguide.org/) or [Org Mode](https://orgmode.org/), to accessing APIs for web services, developing plug-ins for tools, or using developer libraries for toolmaking.
 
 A key feature of a **standard** is that it be well-defined. This allows the development of software tools to check the validity of a document written to the standard. It also allows software to modify, process, change, etc., documents in the standard; eating standardized documents and emitting transformed standardized documents back.
 
