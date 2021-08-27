@@ -19,17 +19,22 @@ Based on the prevalence of note-taking systems in this work, we start with the i
 While it may not be obvious, the note is related to a **document** in an ambiguous way; that is, there is more than one way to make a note out of a document.
 
 + Document
-  + A document is a single _written text_ within the system
+  + A document is a single _written text_ within the system (see below)
   + It is synonymous with "file" in our usage
-    + It is often overloaded with the term note, but this is based on the **strategy** you are using. (See `design_notes.md`.)
+    + It is often overloaded with the term note, but this is based on the **strategy** you are using. (See `design_notes.md` for "strategy.")
       + A note may be a single file or it may exist with other notes within a file.
+      + In this system we definitely want to make any uploaded texts first-class citizens of the search and linking functions. (For example, drafts of blog posts or drafts of scientific papers would be treated by the system in the same way that notes would be. If notes _must_ be distinguished, then they can be tagged in some way or distinguished with metadata.)
 + Location
   + A location is a unique place within a document
-  + A document itself may be a location
+  + A document itself may be a location (the coarsest grained location in the system?)
   + A _part_ of a document may also be a location
     + The most common parts of documents used as locations are _headers_ (_a la_ Obsidian's linking system)
-  + We observe that in any system we are aware of, any note must be able to be made into a location given the individually addressable requirement of notes
+  + We observe that _in any system that we are aware of_, any note must be able to be made into a location given the individually addressable requirement of notes. That is the linking of notes requires that notes be locations:
+
+> Every note must be a location, but it is not necessary that every location **is** a note.
   +
+
+
 
 + Link
   + A link is a connector between documents
@@ -57,5 +62,8 @@ ttt
     +
 + Links
   + Wiki-style links are the default in most of these systems
-    + We enforce these
-    +
+    + We enforce these over markdown links which are also allowed but not processed by the enhanced features of the system.
+    + Links are **not** tags.
++ Tags
+  + Markdown syntax seems to allow for hashtags
+  + These natively conflict with the default header styles, but this is not a problem for most systems, that treat strings beginning with hashtags as tags, and those beginning with the string "`# `" (pound sign followed by space) as headers.
