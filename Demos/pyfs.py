@@ -1,24 +1,30 @@
 import os
-from datetime import datetime, timezone
+from datetime import datetime
 
-# Temp hard path
-path = 'Example_Files/z.md'
+# Functions to get file access times in human terms
 
-# Get the status of the specified path
-statusObj = os.stat(path)
+def get_stat(filepath):
+    so = os.stat(filepath)
+    modtime = datetime.fromtimestamp(so.st_mtime)
+    createtime = datetime.fromtimestamp(so.st_ctime)
+    atime = datetime.fromtimestamp(so.st_atime)
+    return [createtime, modtime, atime]
 
-# Print the status object of the path
-#print('\n', statusObj, '\n')
+def print_stat(filepath, timelist):
+    print('Full file path:\t', filepath, '\n')
+    print('Created Win10 (ctime)\t\t', timelist[0])
+    print('Modified (mtime)\t\t', timelist[1])
+    print('Most recent access (atime)\t', timelist[2])
+    print('---')
 
-# Do some translations and fixing for humans readability
-modified = datetime.fromtimestamp(statusObj.st_mtime)
-created_windows = datetime.fromtimestamp(statusObj.st_ctime)
-atimev = datetime.fromtimestamp(statusObj.st_atime)
+# Demo
 
-# Here is some sample output...
+path = 'Example_Files'         # Temp hard path!
+fp   = os.path.abspath(path)   # Excessive fully articulated path!
+fl   = os.listdir(fp)
+
 print('---')
-print('Full file path:\t', os.path.abspath(path), '\n---')
-print('Modified (mtime)\t\t', modified)
-print('Most recent access (atime)\t', atimev)
-print('Created Win10 (ctime)\t\t', created_windows)
-print('---\n')
+for f in fl:
+    nf = os.path.join(fp, f)
+    el = get_stat(nf)
+    print_stat(nf, el)
