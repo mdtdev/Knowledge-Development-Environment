@@ -6,8 +6,9 @@ The main points of the OE system are to:
 
 1. Integrate the work of writing paper-length and book-length projects into the same system used for note-taking.
    1. Specifically, all documents in the OE are indexed and searched as part of the general background note-taking activities; in essence, any document in the system is treated as a note. Obviously notes have special status, but this is implemented via a **standard** not in software (a **tool** or **implementation**). In software, all documents are the same in terms of the API. For instance, all documents are searchable, are indexed, are transformable by general text transforms (that do not require a given standard), etc.
-   2. Functions exist for turning notes into outlines and then into drafts. If possible, tools should exist to turn draft documents into notes and outlines as well, but this problem is not necessarily invertible (in the functional decomposition sense).
+   2. Functions exist for turning notes into outlines and then into drafts. If possible, tools should exist to turn draft documents into notes and outlines as well, but this problem is not necessarily invertible (in the functional decomposition sense). (`obsidian.md` has some of these features already. It can list notes in a document and when viewed it will insert the notes in place. This is a good view, but should also be exportable as a new document.)
    3. Allow drafts to act as notes and vice-versa.
+   4. One of the implications of this as a system is that complex documents should support some sort of export mechanism which, for example, would allow the coding of **locations** in a draft (or final) text, but which would allow export where these disappear. So that, for instance, the final draft of a document could continue to live in the system with extra parts (like tags, locations, internal and cross-note linking) but which can be sent out without this apparatus present (or, at least, hidden). `pandoc` processing, coupled with CSS styling and command-line-style text file filtering should be able to accomplish this process.
 2. Integration of other tools for thought. This is complex, but the basic ideas are like this:
    1. Over recent years a number of powerful programming language tools have been integrated into Markdown documents:
       1. [RMarkdown](https://rmarkdown.rstudio.com/) allows the making of notebooks with live R code and/or paper and book length documents with integrated data analysis code.
@@ -18,9 +19,7 @@ The main points of the OE system are to:
       1. Integration of computer generated graphics with formatted explanatory text and the bundling of the corresponding data and code, so that these stay together.
       2. **Aside:** Note that the item above is integral to the open science movement!
       3. More or less full use of the computational tools listed above in the format of a notes or notebooks. For me, and I would imagine many other people, these tools are integral to the work we do/our thinking process.
-3. 
-
-
+3.
 
 
 ---

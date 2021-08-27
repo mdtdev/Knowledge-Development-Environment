@@ -53,17 +53,28 @@ ttt
 ## Syntax
 
 + Markdown
-  + At it's root, this is a Markdown based system, and Markdown is mostly **plain text**.
+  + At it's root, this is a Markdown based system, and Markdown is mostly **plain text**. So, this is basically a plain text based note-taking system.
   + This is done for various reasons:
     + **Future-proofing**: Text (Markdown) files are always human readable.
     + **Simplicity**: People can learn enough of Markdown to use it productively in much less than an hour.
     + **Visual Appeal**: Most people can read "uncompiled" Markdown without requiring CSS or other formatting. Additionally tools exist for some live translation of Markdown in an editor context (_a la_ VSC's live Markdown "semi-preview.")
     + **Easy translation**: Via `pandoc` and other tools, Markdown is easy to use to create other document formats like LaTeX and Microsoft Word, etc.
-    +
+    + Limiting of the bulk of things to plain text simplifies things like **search**, **NLP**, and so on.
 + Links
   + Wiki-style links are the default in most of these systems
     + We enforce these over markdown links which are also allowed but not processed by the enhanced features of the system.
     + Links are **not** tags.
 + Tags
   + Markdown syntax seems to allow for hashtags
-  + These natively conflict with the default header styles, but this is not a problem for most systems, that treat strings beginning with hashtags as tags, and those beginning with the string "`# `" (pound sign followed by space) as headers.
+  + These natively conflict with the default header styles, but this is not a problem for most systems, that treat strings beginning with hashtags as tags,as long as the string does not have spaces, and those beginning with the string "`# `" (pound sign followed by space) as headers.
+
+```
+# This is a header
+
+Some text here.
+
+#hashtag, #different-tag #anotherdarntag
+```
+
+---
+2021.08.26 (Initial Working Draft)<br>Matthew Turner
