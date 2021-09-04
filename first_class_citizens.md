@@ -2,13 +2,15 @@
 
 ## The Ideal
 
-What we would like to exist, _at some point_, is an open environment (OE) where any document of interest would open in a way that is natively usable while also being indexed, linked, etc., with every other document in the OE. So notes open Jupyter notebooks or Julia Pluto notebooks, and when clicking on local links in those notebooks you end up seeing notes in a native view for editing.
+What we would like to exist, _at some point_, is an open environment (OE) where any document of interest would open in a way that is natively usable while also being indexed, linked, etc., with every other document in the OE. So notes open Jupyter notebooks (R, Python, etc.) or Julia Pluto notebooks, and when clicking on local links in those notebooks you end up seeing notes in a native view for editing.
 
 This ideal is unlikely to happen any time soon, so maybe keep dreaming.
 
 ## The Real
 
 The most critical aspects of working with a heterogeneous collection of documents is that the indexing, searching, and linking all work. Additionally, viewing in context should be the first goal, followed later by editing/compiling/changing in context, but for the moment we can push that off.
+
+It is reasonable to render Pluto and Jupyter notebooks in a read-only view when called from notes and pop out editor as needed.
 
 ## First-Class Citizens
 
